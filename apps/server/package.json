@@ -1,0 +1,35 @@
+{
+  "name": "@urbanflow/server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "@urbanflow/shared": "*",
+    "express": "^4.21.0",
+    "sql.js": "^1.11.0",
+    "ws": "^8.18.0",
+    "node-cron": "^3.0.3",
+    "zod": "^3.23.0",
+    "pino": "^9.5.0",
+    "pino-pretty": "^11.3.0",
+    "nanoid": "^5.0.0",
+    "axios": "^1.7.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/ws": "^8.5.0",
+    "@types/node-cron": "^3.0.0",
+    "@types/cors": "^2.8.0",
+    "typescript": "^5.6.0",
+    "tsx": "^4.19.0",
+    "rimraf": "^6.0.0"
+  }
+}
